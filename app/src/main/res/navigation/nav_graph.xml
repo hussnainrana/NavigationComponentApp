@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.nain.example.navigationcomponents.Fragments.MainFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentOne"
+            app:destination="@id/fragmentOne"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentTwo"
+            app:destination="@id/fragmentTwo"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentThree"
+            app:destination="@id/fragmentThree"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentOne"
+        android:name="com.nain.example.navigationcomponents.Fragments.FragmentOne"
+        android:label="Android Logo"
+        tools:layout="@layout/fragment_one">
+        <action
+            android:id="@+id/action_fragmentOne_to_fragmentFour"
+            app:destination="@id/fragmentFour"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTwo"
+        android:name="com.nain.example.navigationcomponents.Fragments.FragmentTwo"
+        android:label="Apple Logo"
+        tools:layout="@layout/fragment_two">
+        <action
+            android:id="@+id/action_fragmentTwo_to_fragmentFive"
+            app:destination="@id/fragmentFive"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentThree"
+        android:name="com.nain.example.navigationcomponents.Fragments.FragmentThree"
+        android:label="Flutter Logo"
+        tools:layout="@layout/fragment_three">
+        <action
+            android:id="@+id/action_fragmentThree_to_fragmentSix"
+            app:destination="@id/fragmentSix"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFour"
+        android:name="com.nain.example.navigationcomponents.Fragments.FragmentFour"
+        android:label="Java Logo"
+        tools:layout="@layout/fragment_four">
+        <action
+            android:id="@+id/action_fragmentFour_to_fragmentSeven"
+            app:destination="@id/fragmentSeven"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFive"
+        android:name="com.nain.example.navigationcomponents.Fragments.FragmentFive"
+        android:label="Kotlin Logo"
+        tools:layout="@layout/fragment_five">
+        <action
+            android:id="@+id/action_fragmentFive_to_fragmentEight"
+            app:destination="@id/fragmentEight"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSix"
+        android:name="com.nain.example.navigationcomponents.Fragments.FragmentSix"
+        android:label="Flutter Logo"
+        tools:layout="@layout/fragment_six">
+        <action
+            android:id="@+id/action_fragmentSix_to_fragmentNine"
+            app:destination="@id/fragmentNine"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSeven"
+        android:name="com.nain.example.navigationcomponents.Fragments.FragmentSeven"
+        android:label="Java Details"
+        tools:layout="@layout/fragment_seven" />
+    <fragment
+        android:id="@+id/fragmentNine"
+        android:name="com.nain.example.navigationcomponents.Fragments.FragmentNine"
+        android:label="flutter Details"
+        tools:layout="@layout/fragment_nine" />
+    <fragment
+        android:id="@+id/fragmentEight"
+        android:name="com.nain.example.navigationcomponents.Fragments.FragmentEight"
+        android:label="Kotlin Details"
+        tools:layout="@layout/fragment_eight" />
+</navigation>
